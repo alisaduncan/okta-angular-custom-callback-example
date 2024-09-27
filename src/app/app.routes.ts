@@ -6,5 +6,5 @@ import { CallbackComponent } from './callback/callback.component';
 export const routes: Routes = [
   { path: 'profile', component: ProfileComponent, canActivate: [OktaAuthGuard] },
   { path: 'protected', loadChildren: () => import('./protected/routes').then(m => m.PROTECTED_FEATURE_ROUTES), canActivate: [OktaAuthGuard] },
-  { path: 'login/callback', component: CallbackComponent }
+  // { path: 'login/callback', component: CallbackComponent }
 ];
