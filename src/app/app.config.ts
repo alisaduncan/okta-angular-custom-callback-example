@@ -13,7 +13,7 @@ export const appConfig: ApplicationConfig = {
       OktaAuthModule.forRoot({oktaAuth: new OktaAuth({
         issuer: '{yourOktaDomain}',
         clientId: '{yourClientID}',
-        redirectUri: `${window.location.origin}/login/callback`,
+        redirectUri: `${window.location.origin}`,
         scopes: ['openid', 'profile', 'offline_access'],
       })})
     ),
