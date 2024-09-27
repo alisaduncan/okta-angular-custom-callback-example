@@ -1,4 +1,0 @@
-{
-  "issuer": "https://{yourOktaDomain}/oauth2/default",
-  "clientId": "{yourClientId}"
-}
